@@ -9,12 +9,14 @@ variables:
   PY_COLORS: 1
 
 molecule:
+  stage: build
   script:
     - image=${image} tag=${tag} molecule test
   artifacts:
     name: "$CI_JOB_STAGE-$CI_COMMIT_REF_NAME"
     paths:
       - /
+    expire_in: 1 day
   retry: 1
   parallel:
     matrix:
@@ -73,6 +75,7 @@ galaxy:
     - ansible-galaxy role info buluma.tftpd
 
 role_testing:
+  stage: test
   script:
     - image=${image} tag=${tag} ansible-galaxy install buluma.tftpd
   retry: 1
