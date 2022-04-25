@@ -42,6 +42,7 @@ molecule:
         tag: "focal"
 
 testing:
+  stage: test
   script:
     - image=${image} tag=${tag} molecule test
   rules:
@@ -71,8 +72,7 @@ testing:
         tag: "focal"
 
 galaxy:
-  stage: test
-  needs: [molecule,role_testing,testing]
+  stage: deploy
   script:
     - ansible-galaxy role info buluma.tftpd
 
