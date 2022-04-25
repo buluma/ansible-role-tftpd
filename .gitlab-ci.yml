@@ -72,9 +72,7 @@ testing:
 
 galaxy:
   stage: test
-  dependencies:
-    - role_testing
-    - testing
+  needs: [molecule,role_testing,testing]
   script:
     - ansible-galaxy role info buluma.tftpd
 
