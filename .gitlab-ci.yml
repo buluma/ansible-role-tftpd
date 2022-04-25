@@ -71,7 +71,7 @@ testing:
         tag: "focal"
 
 galaxy:
-  stage: install
+  stage: test
   dependencies:
     - role_testing
     - testing
