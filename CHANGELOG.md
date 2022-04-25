@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.5](https://github.com/buluma/ansible-role-tftpd/tree/0.1.5) (2022-04-25)
+
+[Full Changelog](https://github.com/buluma/ansible-role-tftpd/compare/0.1.4...0.1.5)
+
 ## [0.1.4](https://github.com/buluma/ansible-role-tftpd/tree/0.1.4) (2022-04-09)
 
 [Full Changelog](https://github.com/buluma/ansible-role-tftpd/compare/0.1.3...0.1.4)
