@@ -71,6 +71,10 @@ testing:
         tag: "focal"
 
 galaxy:
+  stage: install
+  dependencies:
+    - role_testing
+    - testing
   script:
     - ansible-galaxy role info buluma.tftpd
 
