@@ -2,9 +2,9 @@
 
 Install and configure tftpd on your system.
 
-|GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
-|------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-tftpd/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-tftpd/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-tftpd/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-tftpd)|[![quality](https://img.shields.io/ansible/quality/58378)](https://galaxy.ansible.com/buluma/tftpd)|[![downloads](https://img.shields.io/ansible/role/d/58378)](https://galaxy.ansible.com/buluma/tftpd)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-tftpd.svg)](https://github.com/buluma/ansible-role-tftpd/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-tftpd.svg)](https://github.com/buluma/ansible-role-tftpd/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-tftpd.svg)](https://github.com/buluma/ansible-role-tftpd/pulls/)|
+|GitHub|GitLab|Downloads|Version|Issues|Pull Requests|
+|------|------|-------|-------|------|-------------|
+|[![github](https://github.com/buluma/ansible-role-tftpd/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-tftpd/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-tftpd/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-tftpd)|[![downloads](https://img.shields.io/ansible/role/d/4857)](https://galaxy.ansible.com/buluma/tftpd)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-tftpd.svg)](https://github.com/buluma/ansible-role-tftpd/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-tftpd.svg)](https://github.com/buluma/ansible-role-tftpd/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-tftpd.svg)](https://github.com/buluma/ansible-role-tftpd/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
