@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/buluma/ansible-role-tftpd/tree/HEAD)
 
-[Full Changelog](https://github.com/buluma/ansible-role-tftpd/compare/0.1.6...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-tftpd/compare/0.1.7...HEAD)
+
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#13](https://github.com/buluma/ansible-role-tftpd/issues/13)
+
+## [0.1.7](https://github.com/buluma/ansible-role-tftpd/tree/0.1.7) (2023-12-25)
+
+[Full Changelog](https://github.com/buluma/ansible-role-tftpd/compare/0.1.6...0.1.7)
 
 **Closed issues:**
 
