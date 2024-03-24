@@ -48,6 +48,8 @@ jobs:
         config:
           - image: "amazonlinux"
             tag: "1"
+          - image: "amazonlinux"
+            tag: "2"
           - image: "enterpriselinux"
             tag: "8"
           - image: "debian-systemd"
