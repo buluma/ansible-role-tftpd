@@ -10,7 +10,7 @@ galaxy_info:
   platforms:
     - name: Amazon
       versions:
-        - all
+        - "2018.03"
     - name: EL
       versions:
         - "8"
