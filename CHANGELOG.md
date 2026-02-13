@@ -4,6 +4,11 @@
 
 [Full Changelog](https://github.com/buluma/ansible-role-tftpd/compare/24.3.31...HEAD)
 
+**Closed issues:**
+
+- Update action [\#12](https://github.com/buluma/ansible-role-tftpd/issues/12)
+- rebuild action [\#11](https://github.com/buluma/ansible-role-tftpd/issues/11)
+
 **Merged pull requests:**
 
 - Bump docker/login-action from 3.2.0 to 3.3.0 [\#16](https://github.com/buluma/ansible-role-tftpd/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
