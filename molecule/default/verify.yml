@@ -10,39 +10,39 @@
       Debian: /srv/tftp
       Ubuntu-18: *default
       Suse: /srv/tftpboot
-    tftp_directory: "{{ _tftp_directory[ansible_distribution ~ '-' ~ ansible_distribution_major_version]
+    tftp_directory:
+      "{{ _tftp_directory[ansible_distribution ~ '-' ~ ansible_distribution_major_version]
       | default(_tftp_directory[ansible_os_family] | default(_tftp_directory['default']))
       }}"
     tftp_client_package: tftp
 
   tasks:
-  - name: Install tftp client
-    ansible.builtin.package:
-      name: "{{ tftp_client_package }}"
-      state: present
-    notify:
-    - Uninstall tftp client
+    - name: Install tftp client
+      ansible.builtin.package:
+        name: "{{ tftp_client_package }}"
+        state: present
+      notify:
+        - Uninstall tftp client
 
-  - name: Touch {{ tftp_directory }}/test
-    ansible.builtin.file:
-      path: "{{ tftp_directory }}/test"
-      mode: "0777"
-      state: touch
-    notify:
-    - Remove test
+    - name: Touch {{ tftp_directory }}/test
+      ansible.builtin.file:
+        path: "{{ tftp_directory }}/test"
+        mode: "0777"
+        state: touch
+      notify:
+        - Remove test
 
-  - name: Put /etc/passwd to test
-    ansible.builtin.command:
-      cmd: tftp localhost -c put /etc/passwd test
+    - name: Put /etc/passwd to test
+      ansible.builtin.command:
+        cmd: tftp localhost -c put /etc/passwd test
 
   handlers:
+    - name: Uninstall tftp client
+      ansible.builtin.package:
+        name: "{{ tftp_client_package }}"
+        state: absent
 
-  - name: Uninstall tftp client
-    ansible.builtin.package:
-      name: "{{ tftp_client_package }}"
-      state: absent
-
-  - name: Remove test
-    ansible.builtin.file:
-      path: "{{ tftp_directory }}/test"
-      state: absent
+    - name: Remove test
+      ansible.builtin.file:
+        path: "{{ tftp_directory }}/test"
+        state: absent
