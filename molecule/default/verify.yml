@@ -34,6 +34,7 @@
 
     - name: Put /etc/passwd to test
       ansible.builtin.command:
+      changed_when: false
         cmd: tftp localhost -c put /etc/passwd test
 
   handlers:
