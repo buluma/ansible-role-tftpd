@@ -11,8 +11,8 @@
       Ubuntu-18: *default
       Suse: /srv/tftpboot
     tftp_directory:
-      "{{ _tftp_directory[ansible_facts.distribution ~ '-' ~ ansible_facts.distribution_major_version]
-      | default(_tftp_directory[ansible_facts.os_family] | default(_tftp_directory['default']))
+      "{{ _tftp_directory[ansible_facts['distribution'] ~ '-' ~ ansible_facts['distribution_major_version']]
+      | default(_tftp_directory[ansible_facts['os_family']] | default(_tftp_directory['default']))
       }}"
     tftp_client_package: tftp
 
