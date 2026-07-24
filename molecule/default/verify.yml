@@ -11,7 +11,9 @@
       Ubuntu-18: *default
       Suse: /srv/tftpboot
     tftp_directory: "{{ _tftp_directory[ansible_facts['distribution'] ~ '-' ~ ansible_facts['distribution_major_version']] | default(_tftp_directory[ansible_facts['os_family']] | default(_tftp_directory['default'])) }}"
-    tftp_client_package: tftp
+    # Debian/Ubuntu dropped the "tftp" transitional package (tftp-hpa is
+    # the real client package name and has always existed alongside it).
+    tftp_client_package: "{{ 'tftp-hpa' if ansible_facts['os_family'] == 'Debian' else 'tftp' }}"
 
   tasks:
     - name: Install tftp client
